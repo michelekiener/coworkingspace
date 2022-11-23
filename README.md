@@ -1,6 +1,6 @@
 # Co Working Space
 
-Co Working Space ist ein Projekt, um Arbeitssitzplätze in einem Gemeintschaftsbüro zu buchen.
+Co Working Space ist ein Projekt, um Arbeitssitzplätze in einem Gemeindschaftsbüro zu buchen.
 
 ## DatabaseAdministration
 
