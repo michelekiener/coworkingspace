@@ -1,32 +1,66 @@
-# Übungsprojekt: Punch Clock
+# Co Working Space
 
-Punch Clock ist ein Zeiterfassungssystem, welches mit Quarkus entwickelt wird.
+Co Working Space ist ein Projekt, um Arbeitssitzplätze in einem Gemeintschaftsbüro zu buchen.
 
-## Erste Schritte
+## DatabaseAdministration
 
-1. Erstelle eine Kopie (fork) von diesem Projekt.
-1. Stelle sicher, dass Docker installiert ist und läuft.
-1. Stelle sicher, dass Visual Studio Code und die Erweiterung Remote Container installiert ist.
-1. Klone (clone) das Projekt lokal, um damit arbeiten zu können.
-1. Öffne das Projekt mit Visual Studio Code.
-1. Öffne das Projekt im Entwicklungscontainer.
-1. Starte das Projekt mit dem Kommando `Quarkus: Debug current Quarkus Project`
-1. Probiere die Client-Applikation unter http://localhost:8080 aus.
-1. Schaue die API auf http://localhost:8080/q/swagger-ui/ an.
+On http://localhost:5050 is PgAdmin4 accessable. With that you can view and alter the database comfortably. the username is `zli@example.com` and the password is `zli*123`. The connection to the postgres database must be configured witht the following data:
 
-## Datenbank
-
-Die Daten werden in einer PostgreSQL-Datenbank gespeichert. In der Entwicklungsumgebung wird diese in der [docker-compose-yml](./.devcontainer/docker-compose.yml) konfiguriert.
-
-### Datenbankadministration
-
-Über http://localhost:5050 ist PgAdmin4 erreichbar. Damit lässt sich die Datenbank komfortabel verwalten. Der Benutzername lautet `zli@example.com` und das Passwort `zli*123`. Die Verbindung zur PostgreSQL-Datenbank muss zuerst mit folgenden Daten konfiguriert werden:
  - Host name/address: `db`
  - Port: `5432`
  - Maintenance database: `postgres`
  - Username: `postgres`
  - Password: `postgres`
 
-## Automatische Tests
+ ## Automated tests
+The automated tests can be startet with the following command `./mvnw quarkus:test`. For the tests the postgres database is not used instead a h2 database is being used which is localted in the RAM while the application is running.
 
-Die automatischen Tests können mit `./mvnw quarkus:test` ausgeführt werden. Für die automatischen Tests wird nicht die PostgreSQL-Datenbank verwendet, sondern eine H2-Datenbank, welche sich im Arbeitsspeicher während der Ausführung befindet.
+## Running the application in dev mode
+
+You can run your application in dev mode that enables live coding using:
+```shell script
+./mvnw compile quarkus:dev
+```
+Your application is now avaiable on http://localhost:8080
+
+## Packaging and running the application
+
+The application can be packaged using:
+```shell script
+./mvnw package
+```
+It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
+Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
+
+The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
+
+If you want to build an _über-jar_, execute the following command:
+```shell script
+./mvnw package -Dquarkus.package.type=uber-jar
+```
+
+The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
+
+## Creating a native executable
+
+You can create a native executable using: 
+```shell script
+./mvnw package -Pnative
+```
+
+Or, if you don't have GraalVM installed, you can run the native executable build in a container using: 
+```shell script
+./mvnw package -Pnative -Dquarkus.native.container-build=true
+```
+
+You can then execute your native executable with: `./target/punch-clock-1.0.0-SNAPSHOT-runner`
+
+If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.
+
+## Provided Code
+
+### RESTEasy Reactive
+
+Easily start your Reactive RESTful Web Services
+
+[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
