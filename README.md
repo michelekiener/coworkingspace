@@ -22,6 +22,7 @@ You can run your application in dev mode that enables live coding using:
 ./mvnw compile quarkus:dev
 ```
 Your application is now avaiable on http://localhost:8080
+You can see all ov your endpoints on http://localhost:8080/q/swagger-ui/#/
 
 ## Packaging and running the application
 
