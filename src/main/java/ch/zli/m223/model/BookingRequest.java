@@ -7,7 +7,7 @@ import org.eclipse.microprofile.openapi.annotations.media.Schema;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Entity
 public class BookingRequest {
@@ -17,16 +17,16 @@ public class BookingRequest {
     private Long id;
 
     @Column(nullable = false)
-    private Date date;
+    private LocalDate localDate;
 
     @ManyToOne(optional = false)
     @Fetch(FetchMode.JOIN)
     private User user;
 
 
-  public BookingRequest(Long id, Date date, User user) {
+  public BookingRequest(Long id, LocalDate localDate, User user) {
     this.id = id;
-    this.date = date;
+    this.localDate = localDate;
     this.user = user;
   }
 
@@ -41,12 +41,12 @@ public class BookingRequest {
     this.id = id;
   }
 
-  public Date getDate() {
-    return this.date;
+  public LocalDate getLocalDate() {
+    return this.localDate;
   }
 
-  public void setDate(Date date) {
-    this.date = date;
+  public void setLocalDate(LocalDate localDate) {
+    this.localDate = localDate;
   }
 
   public User getUser() {

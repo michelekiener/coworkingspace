@@ -8,7 +8,7 @@ import org.hibernate.annotations.FetchMode;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List; 
 
 @Entity
@@ -25,7 +25,7 @@ public class User {
     private String firstname;
 
     @Column(nullable = false)
-    private Date birthdate;
+    private LocalDate birthday;
 
     @Column(nullable = false)
     private String email;
@@ -46,11 +46,11 @@ public class User {
     private List<Booking> bookings;
 
 
-  public User(Long id, String name, String firstname, Date birthdate, String email, String password, boolean admin, Group group, List<Booking> bookings) {
+  public User(Long id, String name, String firstname, LocalDate birthday, String email, String password, boolean admin, Group group, List<Booking> bookings) {
     this.id = id;
     this.name = name;
     this.firstname = firstname;
-    this.birthdate = birthdate;
+    this.birthday = birthday;
     this.email = email;
     this.password = password;
     this.admin = admin;
@@ -84,12 +84,12 @@ public class User {
     this.firstname = firstname;
   }
 
-  public Date getBirthdate() {
-    return this.birthdate;
+  public LocalDate getBirthday() {
+    return this.birthday;
   }
 
-  public void setBirthdate(Date birthdate) {
-    this.birthdate = birthdate;
+  public void setBirthday(LocalDate birthday) {
+    this.birthday = birthday;
   }
 
   public String getEmail() {

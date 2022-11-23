@@ -1,6 +1,6 @@
 package ch.zli.m223.model;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.*;
@@ -17,16 +17,16 @@ public class Booking {
     private Long id;
 
     @Column(nullable = false)
-    private Date date;
+    private LocalDate localDate;
 
     @ManyToOne(optional = false)
     @Fetch(FetchMode.JOIN)
     private User User;
 
 
-  public Booking(Long id, Date date, User user) {
+  public Booking(Long id, LocalDate localDate, User user) {
     this.id = id;
-    this.date = date;
+    this.localDate = localDate;
     this.User = user;
   }
 
@@ -40,12 +40,12 @@ public class Booking {
     this.id = id;
   }
 
-  public Date getDate() {
-    return this.date;
+  public LocalDate getLocalDate() {
+    return this.localDate;
   }
 
-  public void setDate(Date date) {
-    this.date = date;
+  public void setLocalDate(LocalDate localDate) {
+    this.localDate = localDate;
   }
 
   public User getUser() {
