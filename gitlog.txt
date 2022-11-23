@@ -1,40 +1,66 @@
+
 0000000000000000000000000000000000000000 6263449689b834e772526e4193dbfc9b47bcdfe4 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1668508080 +0100	clone: from https://github.com/zlict/m223-punchclock.git
+
 6263449689b834e772526e4193dbfc9b47bcdfe4 293325ff1fd627e393fa1b877f5ef3c6f51dcc4d 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669187533 +0100	commit: test
+
 293325ff1fd627e393fa1b877f5ef3c6f51dcc4d c2d5ab3d2c61e8b68f92e28df06002694ff69255 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669189384 +0000	commit: add user model with relation
+
 c2d5ab3d2c61e8b68f92e28df06002694ff69255 e8eee1a6c0a1ddc75b032f171b017833b056f756 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669189736 +0000	commit: add models with relations
+
 e8eee1a6c0a1ddc75b032f171b017833b056f756 10bcf8e7ad3e23da3bb29ce77bd515c88ffbdda6 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669189837 +0000	commit: add controllers with all endpoints
+
 10bcf8e7ad3e23da3bb29ce77bd515c88ffbdda6 d549c297bcb72fba818ceac3b1a37bb53d39731f 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669189861 +0000	commit: remove entry
+
 d549c297bcb72fba818ceac3b1a37bb53d39731f b3a0fe645aebe5a55d572753da10016ee947efc7 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669189881 +0000	commit: add services
+
 b3a0fe645aebe5a55d572753da10016ee947efc7 09602b57aa7dd451275a6790faf1ea54fe348c83 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669189909 +0000	commit: update application properties
+
 09602b57aa7dd451275a6790faf1ea54fe348c83 2081c95995adc1117f982694387483db1df8d04f 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669190696 +0000	commit: fix mapped by
+
 2081c95995adc1117f982694387483db1df8d04f 80b39cb746cac3a61e17a2f86cb98c1b71cfb035 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669191345 +0000	commit: improve readme
+
 80b39cb746cac3a61e17a2f86cb98c1b71cfb035 ab004e70c05fe1be556159b14fe8a18cde6297d6 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669191354 +0000	commit: remove quarkus readme
+
 ab004e70c05fe1be556159b14fe8a18cde6297d6 f4657003bb3a1ddab3de000f22b86cc22a4e99ef 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669196186 +0000	commit: use local date data type
+
 f4657003bb3a1ddab3de000f22b86cc22a4e99ef a3318b7e1b4423a30726c814929a9c3f07038001 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669198185 +0000	commit: implement tests
+
 a3318b7e1b4423a30726c814929a9c3f07038001 1088e505ae2ac1298d95d2d0d4310df6dd137649 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669198221 +0000	commit: add login
+
 1088e505ae2ac1298d95d2d0d4310df6dd137649 e1d7c6abe5c80156766605c2667c25d791fa574f 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669198231 +0000	commit: remove test file
+
 e1d7c6abe5c80156766605c2667c25d791fa574f 0f5d3a72d5a4d228ca8fa633661dbeef6485bbe4 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669198811 +0000	commit: fix typo
+
 0f5d3a72d5a4d228ca8fa633661dbeef6485bbe4 3554df959bc953bb90de18ccc56ac9b83ef609ba 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669199023 +0000	commit: improve readme
+
 3554df959bc953bb90de18ccc56ac9b83ef609ba 1f2e866ab9805d8e88effe47c87ba275862284f8 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669208816 +0000	commit: WIP authentication
+
 1f2e866ab9805d8e88effe47c87ba275862284f8 849dc12f74e9067b0ebb326d6e618d0f57947bf8 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669208865 +0000	commit: remove html file
+
 849dc12f74e9067b0ebb326d6e618d0f57947bf8 32b6b251c14aa0607e8e575872297744ad156d65 
 Michèle Kiener <michele.kiener@econ.uzh.ch> 1669208944 +0000	commit: edit app description
+
+32b6b251c14aa0607e8e575872297744ad156d65 d5aca5b5402d6c653a05a93d8bca88dd89af4520 
+Michèle Kiener <michele.kiener@econ.uzh.ch> 1669208982 +0000	commit: add gitlog file
+
+d5aca5b5402d6c653a05a93d8bca88dd89af4520 1fed116e29c259d3b0d9806fa0714d4711d83a3d 
+Michèle Kiener <michele.kiener@econ.uzh.ch> 1669211168 +0000	commit: update naming
